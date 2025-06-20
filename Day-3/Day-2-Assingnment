@@ -1,0 +1,47 @@
+# Ways a Value Can Become `NaN` in JavaScript
+```
+In JavaScript, `NaN` stands for **"Not-a-Number"** and is a special value representing a result that is not a valid number. Interestingly, `typeof NaN === "number"`.
+```
+Below are the different ways a value can become `NaN` in JavaScript:
+
+---
+
+## 🔢 1. Invalid Mathematical Operations
+
+Mathematically undefined or nonsensical operations:
+
+```js
+0 / 0                // NaN
+Infinity - Infinity  // NaN
+Math.sqrt(-1)        // NaN
+
+#  Parsing Invalid Numbers
+
+Number("hello")      // NaN
+parseInt("abc")      // NaN
+parseFloat("abc")    // NaN
+parseFloat("12abc")  // 12
+
+#  Math Functions with Invalid Inputs
+
+Math.log(-1)        // NaN
+Math.acos(2)        // NaN
+Math.asin(2)        // NaN
+Math.tan(Infinity)  // NaN
+
+# Operations with undefined
+
+undefined + 5       // NaN
+undefined * 3       // NaN
+Number(undefined)   // NaN
+
+# Invalid Object Coercion
+
+Number({})          // NaN
+Number([])          // 0
+Number([1,2])       // NaN
+
+# Using NaN Directly
+ 
+ NaN                 // NaN
+Number("foo")       // NaN

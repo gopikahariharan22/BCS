@@ -1,0 +1,43 @@
+# day 3
+
+# Structure of Browser
+ - user interface()
+     - browser engine
+        - Data Storage
+        - rendering engine
+           - V8
+           - Networking
+           - UI Backend
+
+ - DNS Propagation
+## javascript basics
+ - javascript - 1995 -previous names(Livewire,Livescript)
+ - javascrip=ECMASript(TC 39 Meeting)
+ - Version
+ - js operators
+  -  mathematical operator
+   - relational operator
+   - logical operator&&,||,
+   ```
+   - console.log(5>6 && 8<6>) // false
+   ```
+   ![alt text](image.png)
+   ![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+
+# ES6 Feutures
+- template literal-multiple line support
+
+window.alert?
+console.log?
+
+# conditions in javascript
+ - var isRaining = true
+
+ if ()
+ convention????
+
+ 
