@@ -11,16 +11,16 @@ HTML,CSS,JS
 ###Shortcuts
 - `alt + Up/Down -move lines
 - `win + . -emoji🤣
-
+```py
 ### rendering Engine takecare of html,css
 
+
 ### jsengine in chromium
-> Note:firefox was built on Rust language
+> Note:firefox was built on Rust language🧑👩
 chrome rendering engine is
 
 - rendering-blink
 - js engine-V8
-```py
 print("Hello, World")
 
 ```
