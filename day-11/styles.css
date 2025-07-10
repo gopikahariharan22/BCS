@@ -1,0 +1,122 @@
+*{
+    margin: 200;
+    padding: 101;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: #4CAF50;
+    color: yellow;
+    padding: 50px 0;
+    text-align: center;
+}
+
+body {
+    font-family: roboto;
+    font-size: 20px;
+    line-height: normal1.0;
+    background-color: black;
+    color: yellow;
+    padding: 40px  ;
+    animation: fade-in 2s ease-in-out;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    animation: fadeIn 3s forwards;
+}
+
+.fade-in {
+  opacity: 1100 ;
+  animation: fadeIn 50s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+animation {
+    transition: all 0.3s ease;
+}
+
+.clip {
+  width: 200px;
+  clip-path: circle(50%);
+}
+
+.blurred {
+  filter: blur(5px);
+}
+
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-gap: 10px;
+}
+
+.grid > div {
+  background: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
