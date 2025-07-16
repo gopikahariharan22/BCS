@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+    </script>
+    <style>
+        body{
+            display: grid;
+            margin: 0;
+            min-height: 100vh;
+            place-content: center;
+
+        }
+        .main-container{
+            width: 700px;
+            height: 400px;
+            
+        }
+        img{
+            width: 100%;
+        }
+        button{
+            height: 15px;
+            width: 40px;
+            border-radius: 20px;
+        }
+        .butten-container{
+            background:green;
+            display: flex;
+            justify-content:space-between;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="botton-container">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+    <div class="main-container">
+        <img class="mySlides" src="https://thumbs.dreamstime.com/b/black-headed-jay-beautiful-garrulus-lanceolatus-perch-looking-back-s-also-called-lanceolated-same-size-as-its-174675039.jpg">
+        <img class="mySlides" src="https://c4.wallpaperflare.com/wallpaper/26/26/373/full-size-hd-nature-1920x1200-wallpaper-preview.jpg">
+        <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwg03Qlc3-9fY9GyA0Rpukk9w-HFW1bKdRNg&s">
+        <img class="mySlides" src="https://media.istockphoto.com/id/1125717224/photo/young-beautiful-plus-size-model-outdoors-xxl-woman-on-nature.jpg?s=612x612&w=is&k=20&c=smL8f_7JUjkSgVxWZafTUuE88HrxobAk5az_M4lxnrw=">
+    </div>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: plum;
+            
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+      let i =0;
+        
+
+        const bgColor = setInterval(() =>{
+
+            const colors = ["crimson" , "orange" , "teal" , "purple"];
+
+            // document.body.style.background = colors[i]
+            document.body.style.background = colors[i%colors.length]
+            if(i>=4){
+                i =0;
+            }
+            i++
+             
+        }, 2000)
+
+        bgColor()
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>waiting for next spider-man homecoming</h1>
+    <h1>Gopika Hariharan</h1>
+    <h1>hobbies</h1>
+    <ul></ul>
+
+    
+    <script>
+       const reviews = document.getElementsByTagName('h1')
+    // console.log(reviews); 
+    console.log(reviews[0].innerText);
+    console.log(reviews[1].innerText);
+    console.log(reviews[0].innerText.toUpperCase());
+    console.log(reviews[1].innerText.toUpperCase());
+
+    const hobbies = [
+        "📚 Reading",
+        "🎨 Painting",
+        "📸 Photography",
+        "🥾 Hiking",
+        "🌱 Gardening",
+        "👨‍🍳 Cooking",
+        "🎶 Playing musical instruments",
+        "💃 Dancing",
+        "✈️ Traveling",
+        "🧶 Knitting",
+      ];
+
+      const Hobbies = document.createElement('ul');
+      hobbies.innerText = ["📚 Reading",
+        "🎨 Painting",
+        "📸 Photography",
+        "🥾 Hiking",
+        "🌱 Gardening",
+        "👨‍🍳 Cooking",
+        "🎶 Playing musical instruments",
+        "💃 Dancing",
+        "✈️ Traveling",
+        "🧶 Knitting",]
+
+        const li = document.querySelector('ul')
+        li.append(hobbies);
+        console.log(hobbies);
+
+        // how to use loop??????????
+
+        const matches = document.querySelectorAll("h1");
+         console.log(matches)
+
+        const arrayMatches = Array.from(matches).map(item => item.innerText)
+        console.log(arrayMatches);
+
+      
+
+        
+
+        
+      
+
+    </script>
+</body>
+</html>
