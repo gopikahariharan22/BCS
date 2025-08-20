@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = [
+  {
+    id: 1,
+    name: "Alice Johnson",
+    email: "alice@example.com",
+    age: 28
+  },
+  {
+    id: 2,
+    name: "Bob Smith",
+    email: "bob@example.com",
+    age: 34
+  },
+  {
+    id: 3,
+    name: "Charlie Davis",
+    email: "charlie@example.com",
+    age: 22
+  }
+];
+const userEmail = users.map((user) =>{
+    return user.email;
+})
+const userId = users.map((user) =>{
+    return user.id;
+})
+const userName = users.map((user)=>{
+    return user.name;
+})
+
+const filteredData = users.filter((user)=>{
+    return user.id % 2 == 0;
+})
+
+const removedUsers = users.splice(0,0);
+//concat
+const itemIndex = users.find((user) =>{
+    return user.name == "Alice Johnson";
+})
+
+
+console.log(itemIndex);
+    </script>
+</body>
+</html>

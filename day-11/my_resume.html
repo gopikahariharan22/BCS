@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <style>
+    body{
+        margin: 0;
+    }
+    /* Base header styling */
+    header {
+      position: sticky;  /* makes header stick */
+      top: 0;            /* stick to top */
+      z-index: 1000;  
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: blue;
+      padding: 10px;
+      flex-wrap: wrap; /* allows items to wrap on smaller screens */
+      text-align: center;
+    }
+
+    header img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
+
+    header h1 {
+      color: rgb(8, 223, 73);
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      color: white;
+      max-width: 400px;
+      margin: 10px 0 0;
+      font-size: 1rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      header img {
+        margin-bottom: 10px;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      header p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Capture8.PNG" alt="My profile picture">
+    <h1>Gopika Hariharan</h1>
+    <p>Full-Stack Developer passionate about building scalable and responsive web applications</p>
+  </header>
+  
+</body>
+</html>

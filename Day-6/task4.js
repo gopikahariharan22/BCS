@@ -4,7 +4,7 @@
 //     return " Natasha's bag contains: 💄, 🔫"
 // }
 
-// console.log(packBag("Natasha", "💄", "🔫"));
+console.log(packBag("Natasha", "💄", "🔫"));
 // console.log(packBag());
 
 // //Output

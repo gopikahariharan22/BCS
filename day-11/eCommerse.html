@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: blue;
+      padding: 10px;
+      flex-wrap: wrap;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
+
+    header h1 {
+      color: rgb(8, 223, 73);
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      color: white;
+      max-width: 400px;
+      margin: 10px 0 0;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      header img {
+        margin-bottom: 10px;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      header p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+      }
+    }
+
+    /* Section */
+    .shoe-title {
+      text-align: center;
+      color: crimson;
+      transition: color 0.3s ease;
+    }
+    .shoe-title:hover {
+      color: green;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    /* Product Card */
+    .product-card {
+      width: 280px;
+      border: 3px solid #839cb9;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 16px;
+      text-align: center;
+      background: #fff;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .product-card figure {
+      margin: 0;
+      position: relative;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product-card figcaption {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: crimson;
+      color: white;
+      font-size: 0.8rem;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .product-title {
+      font-size: 1.2rem;
+      margin: 12px 0 6px;
+      color: #333;
+    }
+
+    .product-description {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .buy-btn {
+      background: crimson;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+
+    .buy-btn:hover {
+      background: darkred;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Capture8.PNG" alt="Profile picture of Gopika Hariharan">
+    <h1>Gopika Hariharan</h1>
+    <p>Full-Stack Developer passionate about building scalable and responsive web applications</p>
+  </header>
+
+  <section>
+    <h1 class="shoe-title">World Wide Shoes</h1>
+    <div class="main-container">
+      <!-- Example shoe product -->
+      <article class="product-card">
+        <figure>
+          <img src="https://calcetto.in/cdn/shop/files/PIX_5297copy.jpg?v=1744199891&width=1500" alt="Red running shoes with white sole">
+          <figcaption>Best Seller</figcaption>
+        </figure>
+        <h2 class="product-title">Red Running Shoes</h2>
+        <p class="product-description">Lightweight, breathable running shoes perfect for everyday training.</p>
+        <button type="button" class="buy-btn">Buy Now</button>
+      </article>
+      <!-- Repeat other shoe products here -->
+    </div>
+
+    <h1 class="shoe-title">World Wide Watches</h1>
+    <div class="main-container">
+      <!-- Example watch product -->
+      <article class="product-card">
+        <figure>
+          <img src="https://images-cdn.ubuy.co.in/667a2c74be77a127ac0027be-poedagar-fashion-casual-mens-watches-top.jpg" alt="Stylish black dial men's watch">
+          <figcaption>Best Seller</figcaption>
+        </figure>
+        <h2 class="product-title">Luxury Men’s Watch</h2>
+        <p class="product-description">Elegant timepiece with durable stainless steel strap and water resistance.</p>
+        <button type="button" class="buy-btn">Buy Now</button>
+      </article>
+      <!-- Repeat other watch products here -->
+    </div>
+  </section>
+</body>
+</html>

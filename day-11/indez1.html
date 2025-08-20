@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Structure Styled</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      position: sticky; /* stays at top while scrolling */
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      display: inline;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    /* Sections */
+    section {
+      padding: 4rem 2rem;
+      min-height: 100vh; /* each fills viewport height */
+    }
+
+    #introduction {
+      background: #f4f4f4;
+    }
+
+    #services {
+      background: #eaeaea;
+    }
+
+    #contact {
+      background: #ddd;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>Welcome to our website. We provide high-quality services for our clients.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <p>We offer web development, design, and consulting services to help businesses grow.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Get in touch with us at <a href="mailto:info@example.com">info@example.com</a>.</p>
+    </section>
+  </main>
+
+  <table>
+    <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Rank</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Gopika</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Hari</td>
+        <td>7</td>
+    </tr>
+  </table>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+</body>
+</html>

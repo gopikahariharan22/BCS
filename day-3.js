@@ -7,4 +7,4 @@
 
 //console.log(`The area given ${radius} cm is ${area}`)
 
-var marks = [70 , 6]
+// var marks = [70 , 6]

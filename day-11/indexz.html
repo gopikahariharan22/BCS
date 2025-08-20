@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar Example</title>
+  <style>
+    /* Reset default list styling */
+    
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex; /* makes it horizontal */
+      background-color: #21d42a;
+    }
+
+    nav li {
+      margin: 0;
+    }
+
+    nav a {
+      display: block;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #e70606;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <form action="/submit" method="post">
+    
+    <!-- Name Input -->
+    <label>Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    
+    <!-- Email Input -->
+    <label>Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    
+    <!-- Gender Radio Buttons -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label>Female</label>
+    <br><br>
+    
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
+
